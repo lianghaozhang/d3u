@@ -1,0 +1,29 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Vue3</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <style> .box{ padding: 100px 0; width: 400px; text-align:center; background: #ddd ; margin: 20px; display: inline-block; } </style>
+</head>
+<body>
+    <h1>Hello Vue3 :）</h1>
+    <div id="abc">
+        <p v-if="show">{{name}}</p>
+        <p>{{age}}</p>
+        <p>{{date}}</p>
+        <button @click="showName">
+            <span v-if="show">Hide Name</span>
+            <span v-else>Show Name</span>
+        </button><br>
+
+        <div class="box" @mouseover="handleEvent">mouseover</div>
+        <div class="box" @mouseleave="handleEvent">mouseleave</div>
+        <div class="box" @dblclick="handleEvent">dblclick</div>
+        <div class="box" @mousemove="mmHandle">mousemove({{x}}, {{y}})</div>
+    </div>
+    <h1>vue应用外</h1>
+  
+    <script src="app.js"></script>
+</body>
+</html>

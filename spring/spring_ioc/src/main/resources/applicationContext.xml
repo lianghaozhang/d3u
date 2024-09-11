@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+<!--==================================================day01====================================================================================-->
+<!--    <bean id="userService" class="com.lianghaozhang.service.impl.UserServiceImpl">-->
+<!--        &lt;!&ndash;   name表示属性名字，就是方法名去掉set，大小写不敏感     &ndash;&gt;-->
+<!--        <property name="UserDao" ref="userDao"/>-->
+<!--    </bean>-->
+
+<!--    <bean id="userDao" class="com.lianghaozhang.dao.impl.UserDaoImpl">-->
+<!--        <constructor-arg name="name" value="abc"/>-->
+<!--    </bean>-->
+
+    <!--  通过静态工厂方法创建bean  -->
+<!--    <bean id="userDao99" class="com.lianghaozhang.factory.MyBeanModel_static" factory-method="getUserDao"/>-->
+<!--    <bean id="abc" class="com.lianghaozhang.factory.MyBeanModel_static" factory-method="getAbc"/>-->
+
+    <!--
+        通过实例工厂方式创建bean:
+            因为不是静态方法，所以实例工厂和静态工厂的区别是要先创建自定义的工厂对象，然后再通过工厂对象调用方法进行bean的实例化
+     -->
+    <!--工厂的bean-->
+<!--    <bean id="myFactoryModel" class="com.lianghaozhang.factory.MyBeanModel"/>-->
+<!--    &lt;!&ndash;两个要创建的bean实例&ndash;&gt;-->
+<!--    <bean id="userDao" factory-bean="myFactoryModel" factory-method="getUserDao"/>-->
+<!--    <bean id="abc" factory-bean="myFactoryModel" factory-method="getAbc"/>-->
+
+<!--    &lt;!&ndash;-->
+<!--        通过实现FactoryBean规范延迟实例化Bean：-->
+<!--            在自定义好的工厂类中实现FactoryBean接口，并重写对应的方法再配置该工厂的bean即可-->
+<!--    &ndash;&gt;-->
+<!--    <bean id="abc100" class="com.lianghaozhang.factory.MyBeanModel3" />-->
+
+
+<!--==================================================day02====================================================================================-->
+    <bean id="abc" class="com.lianghaozhang.beans.Abc">
+        <!--注入基本数据类型的List属性-->
+        <property name="stringList">
+            <list>
+                <value>AAA</value>
+                <value>bbb</value>
+                <value>ccc</value>
+            </list>
+        </property>
+        <!--注入引用类型的List属性-->
+        <!--方式一，value中直接使用bean标签引入-->
+<!--        <property name="abcList">-->
+<!--            <list>-->
+<!--                <bean class="com.lianghaozhang.beans.Abc"/>-->
+<!--                <bean class="com.lianghaozhang.beans.Abc"/>-->
+<!--                <bean class="com.lianghaozhang.beans.Abc"/>-->
+<!--            </list>-->
+<!--        </property>-->
+
+        <!--方式二，value中使用ref标签引入已有的bean-->
+        <property name="abcList">
+            <list>
+                <ref bean="abc1"/>
+                <ref bean="abc2"/>
+                <ref bean="abc3"/>
+            </list>
+        </property>
+
+
+        <!--注入基本数据类型的Set属性-->
+        <property name="stringSet">
+            <set>
+                <value>AAA</value>
+                <value>BBB</value>
+                <value>ccc</value>
+            </set>
+        </property>
+        <!--注入引用类型的Set属性-->
+        <!--方式一，value中直接使用bean标签引入-->
+<!--        <property name="abcSet">-->
+<!--            <set>-->
+<!--                <bean class="com.lianghaozhang.beans.Abc"/>-->
+<!--                <bean class="com.lianghaozhang.beans.Abc"/>-->
+<!--                <bean class="com.lianghaozhang.beans.Abc"/>-->
+<!--            </set>-->
+<!--        </property>-->
+
+        <!--方式二，value中使用ref标签引入已有的bean-->
+        <property name="abcSet">
+            <set>
+                <ref bean="abc1"/>
+                <ref bean="abc2"/>
+                <ref bean="abc3"/>
+            </set>
+        </property>
+
+
+
+        <!--注入基本数据类型的Map集合-->
+        <property name="stringMap">
+            <map>
+                <entry key="1" value="AAA" />
+                <entry key="2" value="BBB" />
+                <entry key="3" value="CCC" />
+            </map>
+        </property>
+
+        <!--注入引用数据类型的Map集合-->
+        <property name="abcMap">
+            <map>
+                <entry key="1" value-ref="abc1" />
+                <entry key="2" value-ref="abc2" />
+                <entry key="3" value-ref="abc3" />
+            </map>
+        </property>
+    </bean>
+
+
+    <bean id="abc1" class="com.lianghaozhang.beans.Abc"/>
+    <bean id="abc2" class="com.lianghaozhang.beans.Abc"/>
+    <bean id="abc3" class="com.lianghaozhang.beans.Abc"/>
+
+
+</beans>

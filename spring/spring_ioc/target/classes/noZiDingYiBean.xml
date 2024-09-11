@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--配置数据源-->
+    <bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource">
+        <property name="driverClassName" value="com.mysql.jdbc.Driver" />
+        <property name="url" value="jdbc:mysql://localhost:3306/spring" />
+        <property name="username" value="root" />
+        <property name="password" value="111111" />
+    </bean>
+
+    <!--配置数据库连接-->
+    <!--mysql驱动-->
+    <bean id="class" class="java.lang.Class" factory-method="forName">
+        <constructor-arg name="className" value="com.mysql.cj.jdbc.Driver"/>
+    </bean>
+
+    <bean id="connection" class="java.sql.DriverManager" factory-method="getConnection">
+        <constructor-arg name="url" value="jdbc:mysql://localhost:3306/spring"/>
+        <constructor-arg name="user" value="root"/>
+        <constructor-arg name="password" value="111111"/>
+    </bean>
+
+    <bean id="simpleDateFormat" class="java.text.SimpleDateFormat">
+        <constructor-arg name="pattern" value="yyyy-MM-dd HH:mm:ss"/>
+    </bean>
+
+    <bean id="date" factory-bean="simpleDateFormat" factory-method="parse">
+        <constructor-arg name="source" value="2024-09-02 13:54:31"/>
+    </bean>
+
+    <!--加载mybatis配置文件-->
+    <bean id="inputStream" class="org.apache.ibatis.io.Resources" factory-method="getResourceAsStream">
+        <constructor-arg name="resource" value="mybatis.xml"/>
+    </bean>
+    <bean id="builder" class="org.apache.ibatis.session.SqlSessionFactoryBuilder" />
+    <bean id="sqlSessionFactory" factory-bean="builder" factory-method="build">
+        <constructor-arg name="inputStream" ref="inputStream" />
+    </bean>
+</beans>

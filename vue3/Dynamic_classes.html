@@ -1,0 +1,50 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Vue3</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <style>
+        body {
+            background: #eee;
+            max-width: 960px;
+            margin: 20px auto;
+        }
+
+        p, h3, ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            list-style-type: none;
+            background: #fff;
+            margin: 20px auto;
+            padding: 10px 20px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        li.fav {
+            background: #ff9ed2;
+            color: #eee;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="abc">
+        <div>
+            <ul>
+                <li v-for="(student, index) in students" :class="{fav: student.isFav}" @click="changeColor(index)">
+                    <h3>{{student.name}}</h3>
+                    <p>{{student.age}}</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="student" class="com.lianghaozhang.beans.Student"/>
+    <bean id="user" class="com.lianghaozhang.beans.User"/>
+    <bean id="myBeanFactoryPostProcessor" class="com.lianghaozhang.processor.MyBeanFactoryPostProcessor"/>
+    <bean id="myBeanDefinitionRegistryPostProcessor" class="com.lianghaozhang.processor.MyBeanDefinitionRegistryPostProcessor"/>
+</beans>

@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="3ae74cad-87f8-439c-9405-6c36dd2cfbaa" name="更改" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="AnnotationType" />
+        <option value="spring-beans.schema" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="customMavenHome" value="D:\maven\apache-maven-3.9.9" />
+        <option name="localRepository" value="D:\maven\apache-maven-3.9.9\repository" />
+        <option name="mavenHomeTypeForPersistence" value="CUSTOM" />
+        <option name="userSettingsFile" value="D:\maven\apache-maven-3.9.9\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="2lMTbnxQeXUAagOd7lC8iSOPePa" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.ApplicationContextTest (1).executor": "Run",
+    "Application.ApplicationContextTest.executor": "Run",
+    "Application.BaseClassScan.executor": "Run",
+    "Application.BeanFactoryTest.executor": "Run",
+    "Application.MyBeanDefinitionRegistryPostProcessor.executor": "Run",
+    "Application.MyBeanFactoryPostProcessor.executor": "Run",
+    "Application.MyBeanFactoryPostProcessorTest.executor": "Debug",
+    "Application.MyBeanFactoryPostProcessorTest2.executor": "Debug",
+    "Application.MyBeanPostProcessorTest.executor": "Run",
+    "Application.NoZiDingYiBean.executor": "Debug",
+    "Application.PropertyTest.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/daima/spring",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "MavenSettings",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ]
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\daima\spring\spring_ioc_test01\src\main\resources" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="" />
+      <recent name="com.lianghaozhang" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.MyBeanPostProcessorTest">
+    <configuration name="ApplicationContextTest (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ApplicationContextTest" />
+      <module name="spring_ioc" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ApplicationContextTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="java.ApplicationContextTest" />
+      <module name="spring_ioc" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="java.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyBeanFactoryPostProcessor" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.lianghaozhang.startApplication.MyBeanFactoryPostProcessor" />
+      <module name="spring_my" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lianghaozhang.startApplication.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyBeanPostProcessorTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MyBeanPostProcessorTest" />
+      <module name="spring_ioc" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PropertyTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="java.PropertyTest" />
+      <module name="spring_ioc" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="java.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.MyBeanPostProcessorTest" />
+        <item itemvalue="Application.ApplicationContextTest (1)" />
+        <item itemvalue="Application.ApplicationContextTest" />
+        <item itemvalue="Application.PropertyTest" />
+        <item itemvalue="Application.MyBeanFactoryPostProcessor" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-b114ca120d71-intellij.indexing.shared.core-IU-242.21829.142" />
+        <option value="bundled-js-predefined-d6986cc7102b-7c0b70fcd90d-JavaScript-IU-242.21829.142" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="3ae74cad-87f8-439c-9405-6c36dd2cfbaa" name="更改" comment="" />
+      <created>1724989021485</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1724989021485</updated>
+      <workItem from="1724989022470" duration="91000" />
+      <workItem from="1724989121158" duration="21516000" />
+      <workItem from="1725181628822" duration="8833000" />
+      <workItem from="1725246023347" duration="10935000" />
+      <workItem from="1725422100589" duration="6279000" />
+      <workItem from="1725686554870" duration="5838000" />
+      <workItem from="1725762047369" duration="8743000" />
+      <workItem from="1725779779210" duration="58000" />
+      <workItem from="1726030707329" duration="1048000" />
+      <workItem from="1726032023243" duration="5096000" />
+      <workItem from="1726038788844" duration="45000" />
+      <workItem from="1726038857205" duration="49000" />
+      <workItem from="1726038926012" duration="9000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/NoZiDingYiBean.java</url>
+          <line>10</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/MyBeanFactoryPostProcessorTest2.java</url>
+          <line>5</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="context" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
