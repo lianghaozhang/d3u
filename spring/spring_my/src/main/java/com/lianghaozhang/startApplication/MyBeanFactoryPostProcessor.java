@@ -1,5 +1,6 @@
 package com.lianghaozhang.startApplication;
 
+import com.mysql.cj.x.protobuf.MysqlxDatatypes;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
