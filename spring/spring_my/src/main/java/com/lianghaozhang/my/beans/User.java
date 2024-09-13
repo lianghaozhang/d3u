@@ -1,9 +1,6 @@
 package com.lianghaozhang.my.beans;
 
-import com.lianghaozhang.my.anno.MyComponent;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import com.lianghaozhang.anno.MyComponent;
 
 @MyComponent("user")
 public class User {

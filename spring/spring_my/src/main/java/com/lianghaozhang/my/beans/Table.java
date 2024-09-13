@@ -1,6 +1,6 @@
 package com.lianghaozhang.my.beans;
 
-import com.lianghaozhang.my.anno.MyComponent;
+import com.lianghaozhang.anno.MyComponent;
 
 @MyComponent()
 public class Table {

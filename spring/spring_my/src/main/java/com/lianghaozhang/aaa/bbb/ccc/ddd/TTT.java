@@ -1,6 +1,6 @@
 package com.lianghaozhang.aaa.bbb.ccc.ddd;
 
-import com.lianghaozhang.my.anno.MyComponent;
+import com.lianghaozhang.anno.MyComponent;
 
 @MyComponent
 public class TTT {

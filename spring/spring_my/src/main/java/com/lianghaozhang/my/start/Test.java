@@ -1,6 +1,6 @@
 package com.lianghaozhang.my.start;
 
-import com.lianghaozhang.my.anno.MyComponent;
+import com.lianghaozhang.anno.MyComponent;
 import com.lianghaozhang.my.beans.MyBeanDefinition;
 import com.lianghaozhang.my.utils.ScanPackage;
 

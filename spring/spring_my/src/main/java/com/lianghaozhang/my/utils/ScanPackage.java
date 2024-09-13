@@ -1,6 +1,6 @@
 package com.lianghaozhang.my.utils;
 
-import com.lianghaozhang.my.anno.MyComponent;
+import com.lianghaozhang.anno.MyComponent;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -9,7 +9,7 @@ import java.util.List;
 
 public class ScanPackage {
 
-    public static List<Class<?>> allClasses = new ArrayList<>();
+    private static List<Class<?>> allClasses = new ArrayList<>();
 
     public static void main(String[] args){
 //        String packageName = "com.lianghaozhang";
@@ -46,7 +46,7 @@ public class ScanPackage {
     }
 
     // 扫描指定包名及其子包下的字节码文件并存储
-    public static void getAllClasses(String packageName) throws ClassNotFoundException {
+    private static void getAllClasses(String packageName) throws ClassNotFoundException {
         // 将包名中的.换成/
         String path = packageName.replace('.', '/');
         // 获取当前线程的类加载器，getResource(path)是获取path的URL对象，getFile()表示获取URL中的文件系统路径
@@ -81,7 +81,7 @@ public class ScanPackage {
     }
 
     // 在allClasses中筛选出使用了@MyComponent注解的类
-    public static List<Class<?>> chooseClasses(){
+    private static List<Class<?>> chooseClasses(){
         List<Class<?>> list = new ArrayList<>();
         for (Class<?> clazz : allClasses) {
             if(clazz.getDeclaredAnnotation(MyComponent.class) != null){
